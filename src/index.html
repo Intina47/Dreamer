@@ -1,0 +1,153 @@
+<!-- entry point / website template-->
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dreamer Influencer</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.10/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+<!-- ajax -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+<body>
+    <header class="bg-dark page_header" style="height: 100vh;">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Homepage</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>About</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center">
+              <p class="text-xl logo" >Gigi Hadid</p>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-primary btn_stly" style="border-radius: 0px;">Book Me Today</button>
+            </div>
+          </div>
+        <!-- hero -->
+        <!-- extends into the nav with a picture coveing half of the right side  and welcome message on the left-->
+        <div class="flex justify-between items-center hero_section">
+          <div class="w-1/2 hero_msg">
+            <h2 class="star_label">*</h2>
+            <h2 class="num_label">00</h2>
+            <h1 class="text-6xl font-bold text-white">The Next Face </br> of Your Brand</h1>
+            <p class="text-2xl text-white">Gigi Hadid, Commercial Model</p>
+            <button class="btn btn-primary" style="border-radius: 0px;">Book Me Today</button>
+          </div>
+          <div class="w-1/2 hero_picture">
+            <img src="/gigi5.jpeg" alt="hero" class="w-full">
+          </div>
+        </div>
+      </header>
+      <!-- my life story section -->
+    <section class="flex justify-between items-center Life_story">
+        <div class="w-1/4 story">
+            <h2 class="num_label">01</h2>
+            <h1 class="text-4xl font-bold">My Life Story</h1>
+            <p class="text-2xl">Born and bred in the Dominican Republic,</br>
+              I moved to Los Angeles to pursue my</br>
+               dream of becoming a top model.</br>
+              
+              Today, I work with professionals and</br>
+               creatives in the industry to manifest</br>
+               clients' concepts and ideas.</p>
+        </div>
+        <div class="w-3/4 story_pics">
+            <div class="flex justify-between items-center Life_story_pics_container">
+                <img src="/gigi_flowers.png" alt="hero" class="w-1/3">
+                <img src="/gigibonita.jpeg" alt="hero" class="w-1/3">
+                <img src="/gigi1.jpeg" alt="hero" class="w-1/3">
+            </div>
+        </div>
+      </section>
+      <!-- visual portfolio section -->
+      <section class="flex justify-between items-start Visual_portfolio" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14.2rem;">
+        <div style="position: relative;">
+          <h2 class="num_label" style="position: absolute; top: 0; left: 30px;">02</h2>
+          <h1 class="text-4xl font-bold" style="position: absolute; top: 0; left: 30px; margin-top: 1.5rem;">Visual<br>Portfolio</h1>
+          <img src="/gigi2.jpeg" alt="hero" class="h-auto w-auto max-h-full max-w-full" style="position: relative; top:25rem; left: 29px; height: 368px; width: 282px; object-fit: cover;">
+          <div class="ml-4" style="position: relative; top:3rem; left: 290px;">
+            <h2 class="star_label">*</h2>
+            <p class="text-sm">Shots from a<br>campaign for Bora<br>Fleur, an online womenswear<br>company</p>
+          </div>
+        </div>
+        <img src="/gigibonita.jpeg" alt="hero" class="h-auto w-auto max-h-full max-w-full" style="position: relative; top: 0rem; left: 197px; object-fit: contain; width: 404px; height: 392px;">
+        <div class="ml-4" style="position: relative; top: 0rem; left: 8rem;">
+          <h2 class="star_label">*</h2>
+          <p class="text-sm">Bora Fleur believes<br> in simplicity and <br>luxury. The shoot<br> played with <br>contrasts <br>and monochrome<br> palettes to achieve <br>the look they<br> wanted.</p>
+        </div>
+        <div class="w-1/2 flex" style="position: relative; top: 29rem; left: -31px;">
+          <div class="ml-4" style="margin-right: 1rem; margin-top: -22px;">
+            <h2 class="star_label">*</h2>
+            <p class="text-sm">They also believe that<br> quality should be <br>present in every stitch. <br>Close-up product <br>shots like these <br>showed the drape, <br>fabric, and stitching <br>of their clothing.</p>
+          </div>
+          <img src="/gigi4.jpeg" alt="hero" class="" style="object-fit: cover; width:404px; height: 268px;">
+        </div>
+      </section>
+      
+    
+
+    <!-- a quote section-->
+
+    <section class="flex justify-between items-center">
+        <div class="w-1/2" style=" margin-left: -76px;">
+            <img src="/gigi6.jpeg" alt="hero" class="w-full" style="object-fit:contain; height:768px; width:768px">
+        </div>
+        <div class="w-1/2">
+            <h2 class="num_label">03</h2>
+            <h2 class="text-4xl font-bold" style="font-size: 40px;">"The cure for <br>self-doubt is<br> achievement."</h2>
+            <p class="text-2xl">- Author Unknown</p>
+
+        </div>
+    </section>
+
+    <section>
+      <h2 class="num_label" style="position: relative;
+      top: 30rem;
+      left: 4rem;">04</h2>
+      <img src="/fendiGG.jpeg" alt="Gigi" style="position: relative;
+      top: 2rem;
+      left: 7rem;
+      height: 500px;
+      width: 580px;
+      object-fit: contain;">
+      <img src="/fendiGG1.jpeg" alt="Gigi" style="position: relative;
+      top: -29rem;
+      left: 41rem;
+      height: 379px;
+      width: 289px;
+      object-fit: contain;">
+      <div style="    position: relative;
+      top: -53rem;
+      left: 62rem;">
+      <h2 class="star_label">*</h2>
+        <p style="margin-top: 0;">Height: <span> 5'10"</span></p>
+        <p>Bust: <span>34</span></p>
+        <p>Waist: 26</p>
+        <p>Hips: 34</p>
+        <p>Shoes: US 8</p>
+        <p>Dress: US 4</p>
+        <p>Hair: Black</p>
+        <p>Eyes: Black</p>
+      </div>
+    </section>
+  
+</body>
+</html>
+
+<!-- Gigi Hadid is an American model. She was signed to IMG Models in 2013. In November 2014, Hadid made her debut in the Top 50 Models ranking at Models.com. In 2016, she was named International Model of the Year by the British Fashion Council.< -->
