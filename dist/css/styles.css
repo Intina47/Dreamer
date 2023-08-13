@@ -1,212 +1,321 @@
-/* Set the header background */
-*{
-    font-size: auto;
-    font-family: 'Nunito', sans-serif;
-    background-color: #000;
-    white-space: nowrap;
-    
+/* Base styles */
+* {
+  font-size: auto;
+  font-family: 'Nunito', sans-serif;
+  background-color: #000;
+  white-space: nowrap;
 }
-header.bg-dark {
-    background-color: #000;
-  }
-  
-  /* Style the navigation bar */
-  nav.navigation_bar {
-    position: relative;
-    z-index: 1;
-  }
-  
-  ul.flex {
-    display: flex;
-  }
-  
-  ul.justify-between {
-    justify-content: space-between;
-  }
-  
-  ul.items-center {
-    align-items: center;
-  }
-  
-  ul.py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-  
-  ul.px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-  div.hero_section {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-  }
-  .Visual_portfolio{
-    background-color: #000;
-  }
-  .star_label{
-    font-size: 30.8px;
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+  background-color: #000;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* Disable tap highlight on IE */
+}
 
-  }
-  .num_label{
-    font-size: 17px;
-  }
-  div.hero_msg {
-    width: 100%;
+.bg-body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar */
+.page_header {
+  height: auto; /* Adjusted height for responsiveness */
+  background-color: #000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.navbar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar-end button {
+  border-radius: 0;
+}
+
+.nav_item {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  flex-direction: column; /* Adjusted for smaller screens */
+  align-items: center;
+  padding: 1.25rem;
+  border-bottom: 1px solid red;
+}
+
+.hero_msg {
+  width: 100%;
+  padding: 0 1rem;
+  margin-left: 0;
+  margin-top: 2rem;
+  text-align: center; /* Centered text for smaller screens */
+}
+
+.star_label {
+  font-size: 30.8px;
+}
+
+.num_label {
+  font-size: 17px;
+}
+
+.text-6xl {
+  font-size: 40px;
+  line-height: 1.08;
+}
+
+.text-2xl {
+  font-size: 14px;
+}
+
+.btn_primary {
+  background-color: #CCF4E5;
+  color: #000;
+  font-size: auto;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.hero_picture {
+  display: flex;
+  width: 100%;
+  min-width: 50%;
+  margin-top: 2rem;
+  align-self: center; /* Centered image for smaller screens */
+}
+
+/* Life story section */
+.Life_story {
+  display: flex;
+  flex-direction: column; /* Adjusted for smaller screens */
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding: 2rem 1.25rem;
+  margin-top: 5.1rem;
+}
+
+.story {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 0;
+  text-align: center; /* Centered text for smaller screens */
+}
+
+.story h1 {
+  font-size: 40px;
+  line-break: auto;
+  line-height: 1.08;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.story_pics {
+  width: 100%;
+  padding: 0 1rem;
+  margin-left: 0;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.Life_story_pics_container {
+  width: 100%;
+  padding: 0;
+  margin-left: 0;
+  margin-top: 1rem;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Life_story_pics_container img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  box-shadow: rgba(13, 43, 94, 0.1);
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+/* Visual portfolio section */
+.Visual_portfolio {
+  display: flex;
+  flex-direction: column; /* Adjusted for smaller screens */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14.2rem;
+  background-color: #000;
+  padding: 2rem 1.25rem;
+}
+
+.Visual_portfolio_heading {
+  width: 100%;
+  text-align: center; /* Centered text for smaller screens */
+  margin-bottom: 1.5rem;
+}
+
+.Visual_portfolio_img_container {
+  width: 100%;
+  text-align: center; /* Centered text for smaller screens */
+}
+
+.Visual_portfolio_img_container img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  box-shadow: rgba(13, 43, 94, 0.1);
+  border-radius: 5px;
+  margin: 1rem auto;
+}
+
+/* Quote section */
+.quote-section {
+  display: flex;
+  flex-direction: column; /* Adjusted for smaller screens */
+  justify-content: center;
+  align-items: center;
+  margin-top: 17.2rem;
+  padding: 2rem 1.25rem;
+}
+
+.quote-section img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  box-shadow: rgba(13, 43, 94, 0.1);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Contact us section */
+.contact-section {
+  display: flex;
+  flex-direction: column; /* Adjusted for smaller screens */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+  background-color: #000;
+  padding: 2rem 1.25rem;
+}
+
+.contact-section h1 {
+  font-size: 40px;
+  line-break: auto;
+  line-height: 1.08;
+  margin-top: 1.5rem;
+  text-align: center; /* Centered text for smaller screens */
+}
+
+.contact-section p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; /* Centered text for smaller screens */
+}
+
+.contact-section img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  box-shadow: rgba(13, 43, 94, 0.1);
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.contact-section .address {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.contact-section .text-sm {
+  font-size: 18px;
+}
+
+.contact-section .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.contact-section a {
+  font-size: 30px;
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.contact-section button {
+  border-radius: 0;
+  margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
   }
 
-  @media (min-width: 768px) {
-    ul.px-5 {
-      padding-left: 1.25rem;
-      padding-right: 1.25rem;
-    }
-  }
-  
-  ul.u_list {
-    list-style-type: none;
-  }
-  
-  li {
-    margin: 0;
-  }
-  
-  a.nav_item {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  .logo{
-    margin: 0.9rem;
-    background-color: transparent;
-    border: none;
-  }
-  .btn_stly{
-    background-color: transparent;
-    border-radius: 0%;
-    border: none;
-  }
-  
-  /* Style the hero section */
-  div.hero_section {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100vh;
-    border-bottom: 1px red;
-  }
-  
-  div.hero_msg {
-    width: 50%;
-    padding: 0 2rem;
-    margin-left: 5rem;
-  }
-  /* life story section */
-  .Life_story{
-    margin-top: 5.1rem;
-    background-color: #000;
-  }
-  div.story{
-    width: 50%;
-    padding: 0 0rem;
-    margin-left: 5rem;
-    margin-top: 0rem;
-  }
-  div.story h1{
-    font-size: 40px;
-    line-break: auto;
-    line-height: 1.08;
-    margin-top: 0rem;
-    margin-bottom: 2rem;
-  }
-  div.story_pics{
-    width: 100%;
-    padding: 10 2rem;
-    margin-left: 0rem;
-    margin-top: 1rem;
-    overflow: hidden;
-  }
-  div.Life_story_pics_container{
-    width: 100%;
-    padding: 10 0rem;
-    margin-left: 0;
-    margin-top: 1rem;
-    justify-content: space-between;
-    display: flex;
-  }
-  div.Life_story_pics_container img{
-    width: 30%;
-    height: 50%;
-    object-fit: cover;
-    box-shadow: rgba(13, 43, 94, 0.1);
-    border-radius: 5px;
-    margin: auto;
-  }
-  .Visual_portfolio {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  
-  .Visual_portfolio_heading {
-    width: 25%;
-  }
-  
-  .Visual_portfolio_img_container {
-    width: 75%;
-  }
-  /* contact us section */
-  .star_label_contact{
-    font-size: 30.8px;
+  .navbar-start ul {
     margin-top: 0.5rem;
-    margin-bottom: 0rem;
+  }
 
+  .navbar-end {
+    margin-top: 1rem;
   }
-  
-  
-  @media (max-width: 768px) {
-    div.hero_msg {
-      width: 100%;
-    }
+
+  .navbar-center {
+    margin-top: 1rem;
   }
-  
-  h1.text-6xl {
-    font-size: 40px;
-    line-break: auto;
-    line-height: 1.08;
+
+  .hero-section {
+    text-align: center;
   }
-  
-  p.text-2xl {
-    font-size: 14px;
-  }
-  button.btn.btn-primary {
-    background-color: #CCF4E5;
-    color: #000;
-    font-size: auto;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Style the hero picture */
-  div.hero_picture {
-    width: 50%;
-    height: 100%;
-    position: relative;
-  }
-  
-  @media (max-width: 768px) {
-    div.hero_picture {
-      width: 100%;
-    }
-  }
-  
-  div.hero_picture img {
+
+  .hero_msg {
+    margin-top: 1rem;
     width: 100%;
-    filter: blur(0px);
-    object-fit: cover;
   }
 
-  
+  .hero_picture {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .Life_story, .Visual_portfolio, .quote-section, .contact-section {
+    padding: 1rem 1.25rem;
+  }
+
+  .Life_story_pics_container img {
+    width: 45%;
+    margin: 1rem 0.5rem;
+  }
+
+  .Visual_portfolio_img_container img {
+    margin: 1rem 0;
+  }
+
+  .quote-section img {
+    margin-bottom: 1rem;
+  }
+}

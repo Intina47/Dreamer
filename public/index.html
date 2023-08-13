@@ -39,65 +39,67 @@
             </div>
         </div>
   
-        <div id="hero_section" class="flex justify-between items-center hero_section">
-            <div class="w-1/2 hero_msg">
-                <h2 class="star_label">*</h2>
-                <h2 class="num_label">00</h2>
-                <h1 class="text-6xl font-bold text-white">The Next Face <br> of Your Brand</h1>
-                <p class="text-2xl text-white">Gigi Hadid, Commercial Model</p>
-                <button class="btn btn-primary" style="border-radius: 0px;">Book Me Today</button>
+        <div id="hero_section" class="flex flex-col md:flex-row justify-center md:justify-between items-center hero_section">
+            <div class="w-full md:w-1/2 hero_msg text-center md:text-left md:pr-12">
+              <h2 class="star_label">*</h2>
+              <h2 class="num_label">00</h2>
+              <h1 class="text-6xl font-bold text-white">The Next Face <br> of Your Brand</h1>
+              <p class="text-2xl text-white">Gigi Hadid, Commercial Model</p>
+              <button class="btn btn-primary btn_stly md:btn-primary-mobile mt-4 md:mt-0">Book Me Today</button>
             </div>
-            <div class="w-1/2 hero_picture">
-                <img src="/assets/caleb4.jpg" alt="hero" class="w-full">
+            <div class="w-full md:w-1/2 hero_picture mt-4 md:mt-0">
+              <img src="/assets/caleb4.jpg" alt="hero" class="w-full">
             </div>
-        </div>
+          </div>
     </header>
     
     <!-- my life story section -->
-    <section id="Life_story" class="flex justify-between items-center Life_story">
-        <div class="w-1/4 story">
-            <h2 class="num_label">01</h2>
-            <h1 class="text-4xl font-bold">My Life Story</h1>
-            <p class="text-2xl">Born and bred in the Dominican Republic,<br>
-              I moved to Los Angeles to pursue my<br>
-              dream of becoming a top model.<br>
-              Today, I work with professionals and<br>
-              creatives in the industry to manifest<br>
-              clients' concepts and ideas.</p>
+    <section id="Life_story" class="flex flex-col md:flex-row justify-center md:justify-between items-center Life_story mb-3rem;">
+        <div class="w-full md:w-1/4 story mb-8 md:mb-0 text-center md:text-left">
+          <h2 class="num_label">01</h2>
+          <h1 class="text-4xl font-bold">My Life Story</h1>
+          <p class="text-2xl">Born and bred in the Dominican Republic,<br>
+            I moved to Los Angeles to pursue my<br>
+            dream of becoming a top model.<br>
+            Today, I work with professionals and<br>
+            creatives in the industry to manifest<br>
+            clients' concepts and ideas.</p>
         </div>
-        <div class="w-3/4 story_pics">
-            <div class="flex justify-between items-center Life_story_pics_container">
-                <img src="/assets/caleb8.jpg" alt="hero" class="w-1/3">
-                <img src="/assets/caleb6.jpg" alt="hero" class="w-1/3">
-                <img src="/assets/caleb7.jpg" alt="hero" class="w-1/3">
-            </div>
+        <div class="w-full md:w-3/4 story_pics">
+          <div class="flex justify-between items-center Life_story_pics_container">
+            <img src="/assets/caleb8.jpg" alt="hero" class="w-1/3">
+            <img src="/assets/caleb6.jpg" alt="hero" class="w-1/3">
+            <img src="/assets/caleb7.jpg" alt="hero" class="w-1/3">
+          </div>
         </div>
-    </section>
+      </section>
+      
     
     <!-- visual portfolio section -->
-    <section id="Visual_portfolio" class="flex justify-between items-start Visual_portfolio" style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14.2rem;">
-        <div style="position: relative;">
-            <h2 class="num_label" style="position: absolute; top: 0; left: 30px;">02</h2>
-            <h1 class="text-4xl font-bold" style="position: absolute; top: 0; left: 30px; margin-top: 1.5rem;">Visual<br>Portfolio</h1>
-            <img src="/assets/caleb2.jpg" alt="hero" class="h-auto w-auto max-h-full max-w-full" style="position: relative; top:25rem; left: 29px; height: 368px; width: 282px; object-fit: cover;">
-            <div class="ml-4" style="position: relative; top:3rem; left: 290px;">
-                <h2 class="star_label">*</h2>
-                <p class="text-sm">Shots from a<br>campaign for Bora<br>Fleur, an online womenswear<br>company</p>
-            </div>
-        </div>
-        <img src="/assets/caleb3.jpg" alt="hero" class="h-auto w-auto max-h-full max-w-full" style="position: relative; top: 0rem; left: 197px; object-fit: contain; width: 404px; height: 392px;">
-        <div class="ml-4" style="position: relative; top: 0rem; left: 8rem;">
+    <section id="Visual_portfolio" class="flex flex-col md:flex-row justify-center md:justify-between items-center md:items-start Visual_portfolio mb-36">
+        <div class="w-full md:w-1/2 relative mb-8 md:mb-0">
+          <h2 class="num_label absolute top-0 left-3">02</h2>
+          <h1 class="text-4xl font-bold absolute top-0 left-3 mt-6">Visual<br>Portfolio</h1>
+          <img src="/assets/caleb2.jpg" alt="hero" class="h-auto w-auto max-h-full max-w-full relative md:top-[25rem] md:left-[29px] md:h-[368px] md:w-[282px] object-cover">
+          <div class="ml-4 absolute top-12 md:top-[3rem] md:left-[290px]" style="margin-top: 37rem;">
             <h2 class="star_label">*</h2>
-            <p class="text-sm">Bora Fleur believes<br> in simplicity and <br>luxury. The shoot<br> played with <br>contrasts <br>and monochrome<br> palettes to achieve <br>the look they<br> wanted.</p>
+            <p class="text-sm">Shots from a<br>campaign for Bora<br>Fleur, an online womenswear<br>company</p>
+          </div>
         </div>
-        <div class="w-1/2 flex" style="position: relative; top: 29rem; left: -31px;">
-            <div class="ml-4" style="margin-right: 1rem; margin-top: -22px;">
-                <h2 class="star_label">*</h2>
-                <p class="text-sm">They also believe that<br> quality should be <br>present in every stitch. <br>Close-up product <br>shots like these <br>showed the drape, <br>fabric, and stitching <br>of their clothing.</p>
-            </div>
-            <img src="/assets/gigi4.jpeg" alt="hero" style="object-fit: cover; width:404px; height: 268px;">
+        <img src="/assets/caleb3.jpg" alt="hero" class="h-auto w-auto max-h-full max-w-full relative md:top-0 md:left-[197px] object-contain md:w-[404px] md:h-[392px]">
+        <div class="ml-4 mt-8 md:mt-0">
+          <h2 class="star_label">*</h2>
+          <p class="text-sm">Bora Fleur believes<br> in simplicity and <br>luxury. The shoot<br> played with <br>contrasts <br>and monochrome<br> palettes to achieve <br>the look they<br> wanted.</p>
         </div>
-    </section>
+        <div class="w-full md:w-1/2 flex mt-8 md:mt-[29rem] md:left-[-31px]">
+          <div class="ml-4 mr-1 md:mr-0 md:mt-[-22px]">
+            <h2 class="star_label">*</h2>
+            <p class="text-sm">They also believe that<br> quality should be <br>present in every stitch. <br>Close-up product <br>shots like these <br>showed the drape, <br>fabric, and stitching <br>of their clothing.</p>
+          </div>
+          <img src="/assets/gigi4.jpeg" alt="hero" class="object-cover w-full md:w-[404px] h-[268px]">
+        </div>
+      </section>
+      
     
     <!-- quote section -->
     <section class="flex justify-between items-center" style="margin-top: 17.2rem;">
@@ -178,24 +180,6 @@
         </div>
     </section>
 
-   <!-- footer -->
-   <!-- <section style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: auto;;background-color: #000;">
-    <footer id="mainFooter" class="">
-        <div class="flex justify-between items-center" style="margin-top: 5rem;">
-            <div class="w-1/2">
-                <p class="text-sm">© 2021 Caleb Seville. All rights reserved.</p>
-            </div>
-            <div class="w-1/2">
-                <div class="flex justify-between items-center">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-   </section> -->
 </body>
 </html>
 
