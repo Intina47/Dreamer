@@ -8,6 +8,7 @@ app.use(express.static('public'));
 app.get('/', (req, res) => res.sendFile('index.html'));
 // serve files in public
 app.get('/public', (req, res) => res.sendFile('public'));
-
+// server css files that are under src/css/
+app.get('/src/css', (req, res) => res.sendFile('src/css'));
 // Start the server.
 app.listen(port, () => console.log(`Server listening on  http://localhost:${port}/`));

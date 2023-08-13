@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: './src/app.js',
@@ -17,10 +18,10 @@ module.exports = {
             },
             // for scss files load the style loader and css modules then add to webpack config file as
             {
-                test: /\.scss$/,
+                test: /\.css$/,
                 use: [
-                    'style-loader',
-                    'css-loader'
+                    MiniCssExtractPlugin.loader, // Extract CSS into separate files
+                    'css-loader' // Translates CSS into CommonJS
                 ]
             },
             {
@@ -42,8 +43,15 @@ module.exports = {
             patterns: [
                 { from: './public/assets', to: 'assets' }
             ]
-        })
-
+        }),
+        new MiniCssExtractPlugin({
+            filename: 'css/styles.css', // Save CSS in the css directory within dist
+            
+        }),
+        // new MiniCssExtractPlugin({
+        //     filename: '[name].css',
+        //     chunkFilename: '[id].css',
+        // })
       ],
     devServer: {
         historyApiFallback: true,
@@ -51,5 +59,11 @@ module.exports = {
         hot: true,
         port: 3000,
         open: true
-    }
+    },
+    mode: 'production',
+    optimization: {
+      splitChunks: {
+        chunks: 'all'
+      }
+    },
 };
