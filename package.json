@@ -5,8 +5,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "node server.js",
-    "dev": "webpack-dev-server --mode development --open",
-    "dev:server": "nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "mamba",

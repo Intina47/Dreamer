@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 4000;
 // Set up the server to serve static files from public directory.
 app.use(express.static('src'));
 app.use(express.static('public'));

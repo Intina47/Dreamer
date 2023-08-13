@@ -3,6 +3,7 @@
     font-size: auto;
     font-family: 'Nunito', sans-serif;
     background-color: #000;
+    white-space: nowrap;
     
 }
 header.bg-dark {
@@ -46,7 +47,7 @@ header.bg-dark {
     background-color: #000;
   }
   .star_label{
-    font-size: 65.8px;
+    font-size: 30.8px;
 
   }
   .num_label{
@@ -155,6 +156,13 @@ header.bg-dark {
   
   .Visual_portfolio_img_container {
     width: 75%;
+  }
+  /* contact us section */
+  .star_label_contact{
+    font-size: 30.8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+
   }
   
   
