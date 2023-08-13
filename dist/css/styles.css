@@ -287,6 +287,10 @@ body {
   .navbar-center {
     margin-top: 1rem;
   }
+  .usertitle{
+    /* hidden */
+    display: none;
+  }
 
   .hero-section {
     text-align: center;
