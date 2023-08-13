@@ -12,5 +12,7 @@ const path = require('path');
 // // server css files that are under src/css/
 // app.get('/src/css', (req, res) => res.sendFile('src/css'));
 app.use(express.static(path.join(__dirname, 'public')));
+// css is under public/css/style.css
+app.get('/css/style.css', (req, res) => res.sendFile('css/style.css'));
 // Start the server.
 app.listen(port, () => console.log(`Server listening on  http://localhost:${port}/`));

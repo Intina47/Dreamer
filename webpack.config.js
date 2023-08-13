@@ -10,6 +10,19 @@ module.exports = {
         filename: '[name].bundle.js',
         clean: true
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+          template: './public/index.html',
+          filename: 'public/index.html',
+        }),
+        new CopyWebpackPlugin({
+            //copy assets and css
+            patterns: [
+                { from: './public/css', to: 'css' },
+                { from: './public/assets', to: 'assets' }
+            ],
+        }),
+      ],
     module: {
         rules: [
             {
@@ -17,11 +30,6 @@ module.exports = {
                 exclude: /node_modules/,
                 use: ['babel-loader']
             },
-            // for scss files load the style loader and css modules then add to webpack config file as
-            {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
-              },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
                 use: [
@@ -29,23 +37,14 @@ module.exports = {
                     loader: 'file-loader',
                     },
                 ],
-            }
+            },
+            {
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            },
+            
         ],
     },
-    plugins: [
-        new MiniCssExtractPlugin({
-            filename: 'style.css',
-        }),
-        new HtmlWebpackPlugin({
-          template: './public/index.html',
-          filename: 'index.html',
-        }),
-        new CopyWebpackPlugin({
-            patterns: [
-                { from: './public/assets', to: 'assets' }
-            ]
-        }),
-      ],
     devServer: {
         historyApiFallback: true,
         contentBase: path.resolve(__dirname, 'dist'),

@@ -1,0 +1,212 @@
+/* Set the header background */
+*{
+    font-size: auto;
+    font-family: 'Nunito', sans-serif;
+    background-color: #000;
+    white-space: nowrap;
+    
+}
+header.bg-dark {
+    background-color: #000;
+  }
+  
+  /* Style the navigation bar */
+  nav.navigation_bar {
+    position: relative;
+    z-index: 1;
+  }
+  
+  ul.flex {
+    display: flex;
+  }
+  
+  ul.justify-between {
+    justify-content: space-between;
+  }
+  
+  ul.items-center {
+    align-items: center;
+  }
+  
+  ul.py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  
+  ul.px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  div.hero_section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  .Visual_portfolio{
+    background-color: #000;
+  }
+  .star_label{
+    font-size: 30.8px;
+
+  }
+  .num_label{
+    font-size: 17px;
+  }
+  div.hero_msg {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    ul.px-5 {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+  }
+  
+  ul.u_list {
+    list-style-type: none;
+  }
+  
+  li {
+    margin: 0;
+  }
+  
+  a.nav_item {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .logo{
+    margin: 0.9rem;
+    background-color: transparent;
+    border: none;
+  }
+  .btn_stly{
+    background-color: transparent;
+    border-radius: 0%;
+    border: none;
+  }
+  
+  /* Style the hero section */
+  div.hero_section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 1px red;
+  }
+  
+  div.hero_msg {
+    width: 50%;
+    padding: 0 2rem;
+    margin-left: 5rem;
+  }
+  /* life story section */
+  .Life_story{
+    margin-top: 5.1rem;
+    background-color: #000;
+  }
+  div.story{
+    width: 50%;
+    padding: 0 0rem;
+    margin-left: 5rem;
+    margin-top: 0rem;
+  }
+  div.story h1{
+    font-size: 40px;
+    line-break: auto;
+    line-height: 1.08;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+  div.story_pics{
+    width: 100%;
+    padding: 10 2rem;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+  div.Life_story_pics_container{
+    width: 100%;
+    padding: 10 0rem;
+    margin-left: 0;
+    margin-top: 1rem;
+    justify-content: space-between;
+    display: flex;
+  }
+  div.Life_story_pics_container img{
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+    box-shadow: rgba(13, 43, 94, 0.1);
+    border-radius: 5px;
+    margin: auto;
+  }
+  .Visual_portfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .Visual_portfolio_heading {
+    width: 25%;
+  }
+  
+  .Visual_portfolio_img_container {
+    width: 75%;
+  }
+  /* contact us section */
+  .star_label_contact{
+    font-size: 30.8px;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+
+  }
+  
+  
+  @media (max-width: 768px) {
+    div.hero_msg {
+      width: 100%;
+    }
+  }
+  
+  h1.text-6xl {
+    font-size: 40px;
+    line-break: auto;
+    line-height: 1.08;
+  }
+  
+  p.text-2xl {
+    font-size: 14px;
+  }
+  button.btn.btn-primary {
+    background-color: #CCF4E5;
+    color: #000;
+    font-size: auto;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style the hero picture */
+  div.hero_picture {
+    width: 50%;
+    height: 100%;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    div.hero_picture {
+      width: 100%;
+    }
+  }
+  
+  div.hero_picture img {
+    width: 100%;
+    filter: blur(0px);
+    object-fit: cover;
+  }
+
+  
