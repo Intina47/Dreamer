@@ -4,10 +4,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry: './src/app.js',
+    entry: './server.js',
     output: {
-        path: path.join(__dirname, '/dist'),
-        filename: 'bundle.js'
+        path: path.join(__dirname, 'dist'),
+        filename: '[name].bundle.js',
+        clean: true
     },
     module: {
         rules: [
@@ -18,12 +19,9 @@ module.exports = {
             },
             // for scss files load the style loader and css modules then add to webpack config file as
             {
-                test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader, // Extract CSS into separate files
-                    'css-loader' // Translates CSS into CommonJS
-                ]
-            },
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+              },
             {
                 test: /\.(png|jpe?g|gif|svg)$/i,
                 use: [
@@ -35,6 +33,9 @@ module.exports = {
         ],
     },
     plugins: [
+        new MiniCssExtractPlugin({
+            filename: 'style.css',
+        }),
         new HtmlWebpackPlugin({
           template: './public/index.html',
           filename: 'index.html',
@@ -44,14 +45,6 @@ module.exports = {
                 { from: './public/assets', to: 'assets' }
             ]
         }),
-        new MiniCssExtractPlugin({
-            filename: 'css/styles.css', // Save CSS in the css directory within dist
-            
-        }),
-        // new MiniCssExtractPlugin({
-        //     filename: '[name].css',
-        //     chunkFilename: '[id].css',
-        // })
       ],
     devServer: {
         historyApiFallback: true,
@@ -60,6 +53,26 @@ module.exports = {
         port: 3000,
         open: true
     },
+    resolve: {
+        fallback: {
+          "crypto": false,
+          "fs": false,
+          "stream": false,
+          "zlib": false,
+          "http": false,
+          "net": false,
+          "querystring": false,
+          "url": false,
+          "path": false,
+          "buffer": false,
+          "os": false,
+          "assert": false,
+          "string_decoder":false ,
+          "async_hooks": false,
+
+
+        }
+      },
     mode: 'production',
     optimization: {
       splitChunks: {
